@@ -1,5 +1,7 @@
 NIR autosampler that uses a Raspberry Pi Zero microcontroller and relay control for the peristaltic pump. Download main.py to the Raspberry Pi to run automatically on boot and run the appropriate version of autopump via terminal. The GUI appears when it is chosen in the system tray.
+
 --- VERSIONS ---
+
 beta: simple version that will pump sample for 60 seconds every time the sample replicate window appears
 
 v1.0: included GUI using PyQt6 module to create widget for monitoring program output
