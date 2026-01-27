@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a77379d5-3853-4413-bb93-37d5286de315" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/autopump.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/autopump_beta.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/autopump_v1_0.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/autopump_v2_0.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/print_window.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pump_rep_window.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample_window.py" afterDir="false" />
+    <list default="true" id="a77379d5-3853-4413-bb93-37d5286de315" name="Changes" comment="NIR autosampler that uses a Raspberry Pi Zero microcontroller and relay control for the peristaltic pump. Download main.py to the Raspberry Pi to run automatically on boot and run the appropriate version of autopump via terminal. The GUI appears when it is chosen in the system tray.&#10;&#10;--- VERSIONS ---&#10;beta: simple version that will pump sample for 60 seconds every time the sample replicate window appears&#10;&#10;v1.0: included GUI using PyQt6 module to create widget for monitoring program output&#10;&#10;v1.1: acts as a sample repeater that can run one sample many times, appending a letter to the end of each spectrum name (A, B, C, etc.)&#10;&#10;v2.0: added a sample queue which can run and track progress of a sequence of samples automatically; sample queue added to the GUI as a numbered table">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +19,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "akjeff91"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/akjeff91/NIR_autopump.git",
+    "accountId": "7e6cda66-773b-4fbd-9938-6ebe68305c83"
+  }
+}]]></component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
@@ -71,6 +72,19 @@
       <option name="presentableId" value="Default" />
       <updated>1769547065789</updated>
     </task>
+    <task id="LOCAL-00001" summary="NIR autosampler that uses a Raspberry Pi Zero microcontroller and relay control for the peristaltic pump. Download main.py to the Raspberry Pi to run automatically on boot and run the appropriate version of autopump via terminal. The GUI appears when it is chosen in the system tray.&#10;&#10;--- VERSIONS ---&#10;beta: simple version that will pump sample for 60 seconds every time the sample replicate window appears&#10;&#10;v1.0: included GUI using PyQt6 module to create widget for monitoring program output&#10;&#10;v1.1: acts as a sample repeater that can run one sample many times, appending a letter to the end of each spectrum name (A, B, C, etc.)&#10;&#10;v2.0: added a sample queue which can run and track progress of a sequence of samples automatically; sample queue added to the GUI as a numbered table">
+      <option name="closed" value="true" />
+      <created>1769554246517</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1769554246517</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="NIR autosampler that uses a Raspberry Pi Zero microcontroller and relay control for the peristaltic pump. Download main.py to the Raspberry Pi to run automatically on boot and run the appropriate version of autopump via terminal. The GUI appears when it is chosen in the system tray.&#10;&#10;--- VERSIONS ---&#10;beta: simple version that will pump sample for 60 seconds every time the sample replicate window appears&#10;&#10;v1.0: included GUI using PyQt6 module to create widget for monitoring program output&#10;&#10;v1.1: acts as a sample repeater that can run one sample many times, appending a letter to the end of each spectrum name (A, B, C, etc.)&#10;&#10;v2.0: added a sample queue which can run and track progress of a sequence of samples automatically; sample queue added to the GUI as a numbered table" />
+    <option name="LAST_COMMIT_MESSAGE" value="NIR autosampler that uses a Raspberry Pi Zero microcontroller and relay control for the peristaltic pump. Download main.py to the Raspberry Pi to run automatically on boot and run the appropriate version of autopump via terminal. The GUI appears when it is chosen in the system tray.&#10;&#10;--- VERSIONS ---&#10;beta: simple version that will pump sample for 60 seconds every time the sample replicate window appears&#10;&#10;v1.0: included GUI using PyQt6 module to create widget for monitoring program output&#10;&#10;v1.1: acts as a sample repeater that can run one sample many times, appending a letter to the end of each spectrum name (A, B, C, etc.)&#10;&#10;v2.0: added a sample queue which can run and track progress of a sequence of samples automatically; sample queue added to the GUI as a numbered table" />
   </component>
 </project>
