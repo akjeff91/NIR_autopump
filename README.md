@@ -1,4 +1,4 @@
-NIR autosampler that uses a Raspberry Pi Zero microcontroller and relay control for the peristaltic pump. Download main.py to the Raspberry Pi to run automatically on boot and run the appropriate version of autopump via terminal. The GUI appears when it is chosen in the system tray.
+NIR autosampler compatible with Thermo Scientific OMNIC workflows that uses a Raspberry Pi Zero microcontroller and relay control to automate a peristaltic pump. Download main.py to the Raspberry Pi to run automatically on boot and run the appropriate version of autopump via terminal. The GUI appears when it is chosen in the system tray.
 
 --- VERSIONS ---
 
