@@ -575,7 +575,7 @@ class LogWindow(QWidget):
     def toggle_automation(self):
         self.automation_on = not self.automation_on
         if self.automation_on:
-            self.lock_sample_inputs()
+            self.unlock_sample_inputs()
             self.toggle_button.setText("Stop Autopump")
             self.pump_controller.start_automation()
         else:
