@@ -225,7 +225,7 @@ class PumpController(QObject):
         """Handle the start sample window by filling in info and clicking accept"""
         try:
             # Check if we should handle this window automatically
-            if self.current_repeat < self.repeat_count and self.base_sample_name:
+            if self.current_repeat > 0 and self.current_repeat < self.repeat_count and self.base_sample_name:
                 sample_name = self.get_current_sample_name()
                 self.log(
                     f"Start sample window detected - Sample {sample_name} (repeat {self.current_repeat + 1}/{self.repeat_count})"
@@ -275,6 +275,9 @@ class PumpController(QObject):
             window = self.pending_window
             self.pending_window = None
 
+            # Reset repeat counter - first window of a new sample group
+            self.current_repeat = 0
+            
             sample_name = self.get_current_sample_name()
             self.log(f"Submitting sample: {sample_name}")
 
