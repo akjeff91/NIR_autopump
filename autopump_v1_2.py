@@ -53,7 +53,7 @@ class PumpController(QObject):
     def __init__(self):
         super().__init__()
         self.SERIAL_PORT = "COM5"
-        self.runtime_sec = 60  # Default fallback (used by Wash)
+        self.runtime_sec = 90  # Default fallback (used by Wash)
 
         # Replicate tracking
         self.replicate_durations = [
