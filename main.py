@@ -1,16 +1,28 @@
-# This is a sample Python script.
+from machine import Pin, Timer
+import time
+import sys
+import select
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+relay = Pin(15, Pin.OUT)  # Control pin connected to IN1 of relay
+led = Pin("LED", Pin.OUT)
 
+def pump_sample(duration_sec):
+    print("Pump starting for", duration_sec, "seconds")
+    relay.value(1)  # Close relay (Start pump)
+    led.value(1)
+    time.sleep(duration_sec)
+    relay.value(0)  # Open relay (Stop pump)
+    led.value(0)
+    print("Pump stopped")
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+while True:
+    if sys.stdin in select.select([sys.stdin], [], [], 0)[0]:
+        line = sys.stdin.readline().strip()
+        print("Received:", line)  # Echo command for debugging
+        if line.startswith("START:"):
+            try:
+                runtime = int(line.split(":")[1])
+                pump_sample(runtime)
+            except:
+                print("Invalid command format")
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
